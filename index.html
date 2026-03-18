@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <title>Anjali Pal – UI/UX & Graphic Designer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{box-sizing:border-box}
 body{
@@ -32,6 +34,27 @@ body{
   position:relative;
 }
 
+/* Download Icon */
+.download-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+.download-icon:hover {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.1);
+}
+
 .header::after{
   content:"";
   position:absolute;
@@ -52,6 +75,7 @@ body{
 }
 
 .name{font-size:32px;font-weight:700}
+
 .role{
   font-size:16px;
   letter-spacing:2px;
@@ -116,7 +140,6 @@ body{
   color:white;
 }
 
-/* Skill Colors */
 .badge.uiux{background:#5b6cff;}
 .badge.graphic{background:#8e44ad;}
 
@@ -127,9 +150,7 @@ body{
   font-size:14px;
 }
 
-.timeline-item{
-  margin-bottom:28px
-}
+.timeline-item{margin-bottom:28px}
 
 .job-title{
   font-weight:600;
@@ -173,27 +194,9 @@ hr{
   margin:30px 0;
 }
 
-/* Download Button */
-.download-btn {
-  text-align:center;
-  margin:20px 0;
-}
-
-.download-btn button {
-  background:#5b6cff;
-  color:white;
-  padding:10px 20px;
-  border:none;
-  border-radius:6px;
-  font-size:16px;
-  cursor:pointer;
-}
-
-/* Responsive for mobile */
+/* Responsive */
 @media screen and (max-width: 768px) {
-  .content {
-    grid-template-columns: 1fr; 
-  }
+  .content { grid-template-columns: 1fr; }
   .sidebar {
     border-right: none;
     border-bottom: 1px solid #eee;
@@ -207,6 +210,7 @@ hr{
     margin-bottom: 20px;
   }
 }
+
 @media print {
   button { display: none; }
   body { background: white; color: black; }
@@ -221,21 +225,29 @@ hr{
 
 <!-- Header -->
 <div class="header">
+
+<button class="download-icon" onclick="window.print()">📄</button>
+
 <img src="Picture1.jpg" class="profile-img">
+
 <div>
 <div class="name">Anjali Pal</div>
 <div class="role">UI / UX & Graphic Designer</div>
+
 <div class="contact">
 📍 Bangalore, India &nbsp; | &nbsp; 📞 9899454096 <br>
 ✉️ anji20job@gmail.com <br>
-🔗 linkedin.com/in/anjali-pal-78423b250 &nbsp; | &nbsp; 🎨 behance.net/anjalipal270
-</div>
-</div>
-</div>
 
-<!-- Download Button -->
-<div class="download-btn">
-  <button onclick="window.print()">📄 Download PDF</button>
+🔗 <a href="https://linkedin.com/in/anjali-pal-78423b250" target="_blank" style="color:white; text-decoration:none;">
+linkedin.com/in/anjali-pal-78423b250</a>
+
+&nbsp; | &nbsp;
+
+🎨 <a href="https://behance.net/anjalipal270" target="_blank" style="color:white; text-decoration:none;">
+behance.net/anjalipal270</a>
+
+</div>
+</div>
 </div>
 
 <div class="content">
@@ -246,7 +258,6 @@ hr{
 <div class="section">
 <div class="section-title">Core Skills</div>
 <div class="skill-grid">
-<!-- UI/UX Skills -->
 <span class="badge uiux">User Research</span>
 <span class="badge uiux">Wireframing</span>
 <span class="badge uiux">Prototyping</span>
@@ -256,7 +267,7 @@ hr{
 <span class="badge uiux">Information Architecture</span>
 <span class="badge uiux">Responsive Design</span>
 <span class="badge uiux">Accessibility</span>
-<!-- Graphic Design Skills -->
+
 <span class="badge graphic">Logo Design</span>
 <span class="badge graphic">Brand Identity</span>
 <span class="badge graphic">Packaging Design</span>
@@ -289,8 +300,8 @@ hr{
 <div class="edu">
 <b>Master of Architecture</b><br>
 DCRUST Murthal<br>
-2018 – 2020
-<br><br>
+2018 – 2020 <br><br>
+
 <b>Bachelor of Architecture</b><br>
 Vastu Kala Academy, New Delhi<br>
 2010 – 2015
@@ -304,94 +315,16 @@ Vastu Kala Academy, New Delhi<br>
 
 </div>
 
-<!-- Main Content -->
+<!-- Main -->
 <div class="main">
 
 <div class="section">
 <div class="section-title">Professional Summary</div>
 <p>
-Creative and detail-oriented UI/UX & Graphic Designer with 4+ years of experience in designing intuitive digital products and visually appealing marketing materials. Skilled in research, wireframing, prototyping, usability testing, logo design, branding, packaging, banners, standees, and catalogues. Proficient in Figma, Adobe Creative Suite, and other design tools, delivering high-quality, user-centered and visually engaging designs.
+Creative and detail-oriented UI/UX & Graphic Designer with 4+ years of experience in designing intuitive digital products and visually appealing marketing materials.
 </p>
 </div>
 
-<hr>
-
-<div class="section">
-<div class="section-title">Experience</div>
-
-<div class="timeline-item">
-<div class="job-title">UI/UX Designer</div>
-<div class="company">Entrepreneurship Development Institute of India (EDII) • Jan 2023 – Present</div>
-<ul>
-<li>Led UI/UX redesign of the WeAct platform improving navigation and usability.</li>
-<li>Created wireframes, interactive prototypes, and high‑fidelity UI designs using Figma.</li>
-<li>Designed dashboards, widgets, and UI components for web and mobile apps.</li>
-<li>Conducted usability testing and user interviews to refine product features.</li>
-<li>Built reusable design systems for consistent UI across platforms.</li>
-</ul>
-</div>
-
-<div class="timeline-item">
-<div class="job-title">UI/UX Designer</div>
-<div class="company">Sanity Software • Oct 2021 – Oct 2022</div>
-<ul>
-<li>Designed UI for DocEngage healthcare practice management system.</li>
-<li>Created user flows, wireframes, and high‑fidelity mockups.</li>
-<li>Developed interactive prototypes for stakeholder validation.</li>
-<li>Improved usability for doctors and healthcare staff.</li>
-</ul>
-</div>
-
-<div class="timeline-item">
-<div class="job-title">Graphic Designer (Freelance)</div>
-<div class="company">Various Clients • 2020 – Present</div>
-<ul>
-<li>Designed logos, brand identities, packaging, banners, standees, and marketing collateral.</li>
-<li>Developed product catalogues and brochures for print and digital use.</li>
-<li>Ensured brand consistency across all visual assets and campaigns.</li>
-<li>Delivered creative solutions meeting deadlines and client expectations.</li>
-</ul>
-</div>
-
-</div>
-
-<hr>
-
-<div class="section">
-<div class="section-title">Key Projects</div>
-
-<div class="project-card uiux">
-<div class="project-title">WeAct Website Revamp</div>
-Redesigned the platform improving information architecture, navigation, and accessibility.
-</div>
-
-<div class="project-card uiux">
-<div class="project-title">Employee Dashboard</div>
-Designed analytics dashboard to track employee performance and achievements.
-</div>
-
-<div class="project-card uiux">
-<div class="project-title">DocEngage Healthcare Platform</div>
-Designed UI for healthcare management system integrating EHR & PHR modules.
-</div>
-
-<div class="project-card graphic">
-<div class="project-title">Brand Identity & Logo Designs</div>
-Developed complete brand identities, logos, and marketing materials for clients across multiple industries.
-</div>
-
-<div class="project-card graphic">
-<div class="project-title">Packaging & Marketing Collateral</div>
-Created packaging designs, banners, brochures, and standees for client campaigns and product launches.
-</div>
-
-</div>
-
-<hr>
-
-<div class="section">
-<div class="section-title">Certification</div>
-Advanced UI/UX Design Certification – IIIT Bangalore
 </div>
 
 </div>
